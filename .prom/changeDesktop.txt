@@ -1,0 +1,6 @@
+on run argv
+    tell application "Finder"
+        set p to "/Users/isabel/.prom/" & item 1 of argv & ".png"
+        set desktop picture to POSIX file p
+    end tell
+end run
